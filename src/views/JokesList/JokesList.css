@@ -53,7 +53,8 @@
   font-family: 'Luckiest Guy', cursive;
   font-size: 5rem;
   color: magenta;
-  letter-spacing: .25rem;;
+  letter-spacing: .25rem;
+  text-shadow: 3px 3px 0 blue;
 }
 
 .jokesList{

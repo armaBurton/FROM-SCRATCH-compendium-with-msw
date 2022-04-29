@@ -1,4 +1,5 @@
 import { useJokeContext } from '../../context/JokeProvider';
+import selectedJokeFetch from '../../utils/selectedJokeFetch';
 import JokeRender from '../JokeRender/JokeRender';
 import JokesArr from '../JokesArr/JokesArr';
 import style from './JokesList.css';
@@ -7,6 +8,7 @@ export default function JokesList() {
   const {
     loading, setLoading,
     selected, setSelected,
+    jokes, setJokes
   } = useJokeContext();
 
   function handleChange(e){
@@ -19,8 +21,15 @@ export default function JokesList() {
     location.href = '/';
   }
 
+  async function getSelected() {
+    setLoading(true);
+    const newJokes = await selectedJokeFetch(selected);
+    setJokes(newJokes);
+    setLoading(false);
+  }
+
   function handleClick(){
-    selected === 'Random' ? getRandom() : () => {};
+    selected === 'Random' ? getRandom() : getSelected();
   }
 
   console.log(selected);
@@ -31,21 +40,6 @@ export default function JokesList() {
         <h1>HARDY-HAR-HAR</h1>
         <div>
           <button onClick={handleClick}>Gimmie Moar Jokes</button>
-          {/* <button onClick={() => {
-            selected === 'Random' ? console.log('random') : 
-              console.log('not random') }}>Gimmie Moar Jokes
-          </button> */}
-          {/* <button onClick={() => {
-            selected === 'Random' ? () => {getRandom} : 
-              () => {}}}>Gimmie Moar Jokes
-          </button> */}
-
-          {/* <button onClick={() => {
-            selected === 'Random' ? () => {
-              setLoading(true);
-              location.href = '/'
-            } : () => {}
-          }}>Gimmie Moar Jokes</button> */}
           <select onChange={handleChange}>
             <option value="Random">Random</option>
             <option value="Programming">Programming</option>

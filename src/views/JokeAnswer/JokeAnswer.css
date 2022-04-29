@@ -16,6 +16,7 @@ header{
 
 .wrapper h1{
   color:magenta;
+  text-shadow: 3px 3px 0 lightyellow;
 }
 
 .wrapper span{
