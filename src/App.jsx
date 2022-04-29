@@ -8,7 +8,7 @@ import { useJokeContext } from './context/JokeProvider';
 import { useEffect } from 'react'
 import jokeFetch from './utils/jokeFetch';
 import JokesList from './views/JokesList/JokesList'
-import './App.css';
+import style from './App.css';
 
 export default function App() {
   const {

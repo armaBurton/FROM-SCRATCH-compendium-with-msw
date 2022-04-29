@@ -4,6 +4,21 @@
   background-color: ghostwhite;
 }
 
+.headSpace{
+  height: 150px;
+  width: 900px;
+  background: pink;
+  position: absolute;
+  top:0;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 5rem;
+  color: magenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
 .jokeGallery header{
   height: 150px;
   width: 900px;
@@ -15,6 +30,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+  border-bottom: 5px solid chartreuse;
+}
+
+.headSpace h1{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 5rem;
+  color: magenta;
+  letter-spacing: .25rem;;
 }
 
 .jokesList{
@@ -24,11 +48,12 @@
   display: flex;
   justify-content: center;
   gap:50px;
+  flex-wrap: wrap;
 }
 
 .jokesList h1{
   font-size: 5rem;
-  color: magenta;
+  color: chartreuse;
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: .35rem;
 }
