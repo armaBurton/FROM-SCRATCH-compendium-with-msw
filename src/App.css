@@ -15,4 +15,6 @@ html{
   display: flex;
   justify-content: center;
   background: lightyellow;
+  background-image: url('../public/ori_3496751_eed33cc658b3b9a02fdb6d0e0302d5a16cec3904_cartoon-smiling-lips-seamless-pattern-laughing-mouth-with-tongue-fun.jpg');
+  background-size: 300px;
 }

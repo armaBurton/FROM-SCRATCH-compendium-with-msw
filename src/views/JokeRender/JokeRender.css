@@ -9,6 +9,11 @@
   border-radius: 10px;
 }
 
+.jokeCard:hover{
+  box-shadow: 4px 4px 2px chartreuse,
+  6px 6px 2px magenta;
+}
+
 .head{
   width: 100%;
   padding: 0;

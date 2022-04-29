@@ -11,9 +11,6 @@ export default function JokeAnswer() {
 
   const { id } = useParams()
 
-  console.log(id);
-  console.log(jokes);
-
   let currentJoke = {};
 
   for (let j of jokes){
