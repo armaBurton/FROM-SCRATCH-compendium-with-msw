@@ -1,0 +1,45 @@
+.jokeCard{
+  width: 225px;
+  height: 395px;
+  background-color: magenta;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.head{
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head h3{
+  font-weight: 700;
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  color: chartreuse;
+  letter-spacing: .063rem;
+  padding-top: 8px;
+  text-shadow: 2px 2px 1px blue;
+}
+
+.bodySection{
+  width: 100%;
+  min-height: 350px;
+  background-color: pink;
+  padding: 20px;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.bodySection p{
+  color: magenta;
+  font-weight: 600;
+}

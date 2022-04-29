@@ -7,8 +7,9 @@ import {
 import { useJokeContext } from './context/JokeProvider';
 import { useEffect } from 'react'
 import jokeFetch from './utils/jokeFetch';
-import JokesList from './views/JokesList/JokesList'
-import './App.css';
+import JokesList from './views/JokesList/JokesList';
+import JokeAnswer from './views/JokeAnswer/JokeAnswer';
+import style from './App.css';
 
 export default function App() {
   const {
@@ -32,7 +33,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route path='/jokes/:id'>
-
+          <JokeAnswer />
         </Route>
         <Route path='/jokes'>
           <JokesList />
