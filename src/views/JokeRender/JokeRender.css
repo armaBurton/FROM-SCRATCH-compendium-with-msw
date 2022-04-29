@@ -1,6 +1,6 @@
 .jokeCard{
   width: 225px;
-  height: 250px;
+  height: 395px;
   background-color: magenta;
   display: flex;
   justify-content: space-between;
@@ -24,10 +24,12 @@
   color: chartreuse;
   letter-spacing: .063rem;
   padding-top: 8px;
+  text-shadow: 2px 2px 1px blue;
 }
 
 .bodySection{
-  min-height: 205px;
+  width: 100%;
+  min-height: 350px;
   background-color: pink;
   padding: 20px;
   font-size: 1.125rem;

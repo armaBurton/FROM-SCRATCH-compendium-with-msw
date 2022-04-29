@@ -7,8 +7,6 @@ export default function JokesArr() {
     jokes
   } = useJokeContext();
 
-  console.log(jokes);
-
   return (
     <>
       {

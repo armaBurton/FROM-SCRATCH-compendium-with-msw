@@ -24,20 +24,4 @@ export default function JokesList() {
         }
       </div>
     </section >
-  )
-
-  // return <section className={style.jokeGallery}>
-  //   <header>HARDY-HAR-HAR</header>
-  //   <div className={style.jokesList}>
-  //     {
-  //       loading ? (<h1>loading#@*!</h1>) : (
-  //         <>
-  //           {
-  //             jokes.map((joke, i) => <JokeRender key={`${joke}${i}`} joke={joke} data-testid={i}/>)
-  //           }
-  //         </>
-  //       )
-  //     }
-  //   </div>
-  // </section>
-}
+  )}
