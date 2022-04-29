@@ -5,6 +5,12 @@ import App from './App';
 
 describe('App', () => {
   it('should all me to pass github CI', () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <App />
+      </MemoryRouter>
+    );
+
 
   });
 });

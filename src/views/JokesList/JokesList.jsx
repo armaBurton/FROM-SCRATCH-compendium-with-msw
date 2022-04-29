@@ -5,8 +5,7 @@ import style from './JokesList.css';
 
 export default function JokesList() {
   const {
-    jokes, setJokes,
-    loading, setLoading
+    loading,
   } = useJokeContext();
 
   return(
