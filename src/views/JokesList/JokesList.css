@@ -5,33 +5,48 @@
 }
 
 .headSpace{
-  height: 150px;
-  width: 900px;
-  background: pink;
-  position: absolute;
-  top:0;
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 5rem;
-  color: magenta;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-
-.jokeGallery header{
+  padding-top: 50px;
   height: 150px;
   width: 900px;
   background: pink;
   position: fixed;
   font-family: 'Luckiest Guy', cursive;
   font-size: 5rem;
+  line-height: 0;
   color: magenta;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   z-index: 10;
   border-bottom: 5px solid chartreuse;
+  gap: 0;
+}
+
+.headSpace div{
+  margin-top: 20px;
+}
+
+.jokeGallery button{
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid magenta;
+  background-color: pink;
+  color: blue;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.jokeGallery button:hover{
+  border: 1px solid chartreuse;
+  background-color: magenta;
+  color: pink;
+}
+
+.jokeGallery button:active{
+  border: 1px solid blue;
+  background-color: chartreuse;
+  color: magenta;
 }
 
 .headSpace h1{
