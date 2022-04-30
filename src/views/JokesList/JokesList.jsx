@@ -32,7 +32,7 @@ export default function JokesList() {
     selected === 'Random' ? getRandom() : getSelected();
   }
 
-  console.log(selected);
+  console.log(jokes);
   
   return(
     <section className={style.jokeGallery}>

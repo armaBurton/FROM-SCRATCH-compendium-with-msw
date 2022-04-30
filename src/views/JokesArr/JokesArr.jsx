@@ -10,7 +10,7 @@ export default function JokesArr() {
   return (
     <>
       {
-        jokes.map((joke, i) => <JokeRender key={`${joke}${i}`} joke={joke} />)
+        jokes.map((joke, i) => <JokeRender key={`${joke}${i}`} joke={joke} i={i}/>)
       }
     </>
   )
