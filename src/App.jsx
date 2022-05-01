@@ -29,8 +29,6 @@ export default function App() {
     getJokes();
   }, [])
 
-  console.log(jokes);
-
   return (
     <Router>
       <Switch>

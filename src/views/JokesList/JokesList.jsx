@@ -31,9 +31,8 @@ export default function JokesList() {
   function handleClick(){
     selected === 'Random' ? getRandom() : getSelected();
   }
+   
 
-  console.log(jokes);
-  
   return(
     <section className={style.jokeGallery}>
       <header className={style.headSpace}>
